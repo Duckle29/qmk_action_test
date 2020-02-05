@@ -28,7 +28,7 @@ jobs:
       if: steps.get_config.outputs.config != 'No keyboards added'
       id: generate_qmkpid
       run: |
-        bin/qmk pid --apply --commit ${{ steps.get_config.outputs.configs }}
+        /usr/bin/env python3 bin/qmk pid --apply --commit ${{ steps.get_config.outputs.configs }}
 
     - name: Push changes
       uses: ad-m/github-push-action@master
