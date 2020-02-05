@@ -17,8 +17,8 @@
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0xB195
+#define VENDOR_ID       0x03A8
+#define PRODUCT_ID      0xB191
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    rionlion100
 #define PRODUCT         2% Milk
