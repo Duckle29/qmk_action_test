@@ -45,7 +45,7 @@ jobs:
         echo "##[set-output name=configs;]$(git diff-tree --no-commit-id -m --name-only -r ${{ github.sha }} | grep config.h | grep -v keymaps || echo 'No keyboards added')"
 
     - name: Generate QMKPID
-      if: steps.get_config.outputs.config != 'No keyboards added'
+      if: steps.get_config.outputs.configs != 'No keyboards added'
       id: generate_qmkpid
       run: |
         /usr/bin/env python3 bin/qmk pid --apply --commit ${{ steps.get_config.outputs.configs }}
