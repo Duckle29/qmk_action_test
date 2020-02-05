@@ -4,7 +4,7 @@
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0x03A8
-#define PRODUCT_ID      0x6160
+#define PRODUCT_ID      0x6260
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    1upkeyboards
 #define PRODUCT         1UP RGB Underglow PCB
