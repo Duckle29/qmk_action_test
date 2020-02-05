@@ -21,7 +21,7 @@
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0x03A8
-#define PRODUCT_ID      0x2350
+#define PRODUCT_ID      0x609F
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    Clueboard
 #define PRODUCT         Clueboard 60%
