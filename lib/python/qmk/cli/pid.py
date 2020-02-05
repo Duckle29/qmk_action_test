@@ -202,6 +202,7 @@ def process_config(cli, config_path, pids_json_path, pid_match):
         except subprocess.CalledProcessError as e:
             cli.log.error('Committing to git failed. {} failed with: {}'.format(e.cmd, e.output))
             return False
+    return True
 
 
 @cli.argument('config', nargs='+', arg_only=True, type=str, help='One or more configs to process')
