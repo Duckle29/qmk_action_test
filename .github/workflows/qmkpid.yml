@@ -42,7 +42,7 @@ jobs:
       if: github.event.pull_request.merged
       id: get_config
       run: |
-        echo "##[set-output name=configs;]$(git diff-tree --no-commit-id -m --name-only -r ${{ github.sha }} | grep config.h | grep -v keymaps || echo 'No keyboards added')"
+        echo "##[set-output name=configs;]$((git diff-tree --no-commit-id -m --name-only -r ${{ github.sha }} | grep config.h | grep -v keymaps || echo 'No keyboards added') | tr '\r\n' ' ')"
 
     - name: Generate QMKPID
       if: steps.get_config.outputs.configs != 'No keyboards added'
