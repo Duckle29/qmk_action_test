@@ -20,7 +20,7 @@
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xC1ED
+#define VENDOR_ID       0x03A8
 #define PRODUCT_ID      0x2350
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    Clueboard
