@@ -18,7 +18,7 @@
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0x03A8
-#define PRODUCT_ID      0xA111
+#define PRODUCT_ID      0x391D
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    rionlion100
 #define PRODUCT         2% Milk
