@@ -162,8 +162,8 @@ def pid(cli):
             return False
 
         if vid_match.group(1) != qmk_vid:
-            cli.log.info("Keyboard does not use QMK VID, or it's not a keyboard config. ({} != {})".format(vid_match.group(1), qmk_vid))
-            return True
+            cli.log.info("Keyboard does not use QMK VID, or it's not a keyboard config. ({} != {} in {})".format(vid_match.group(1), qmk_vid, config_h))
+            continue
         else:
             path = str(Path(config_h).parents[0])
 
