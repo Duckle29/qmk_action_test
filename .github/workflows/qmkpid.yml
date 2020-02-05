@@ -13,6 +13,10 @@ jobs:
     - name: Check out
       uses: actions/checkout@v1
 
+    - name: Install python dependencies
+      run: |
+        /usr/bin/env python3 -m pip install -r requirements.txt
+
     - name: Set up git config
       run: |
         git config --local user.email "action@github.com"
