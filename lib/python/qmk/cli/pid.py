@@ -242,5 +242,4 @@ def pid(cli):
         else:
             if not process_config(cli, config_h, pids_json_path, pid_match):
                 return False
-
     return True
