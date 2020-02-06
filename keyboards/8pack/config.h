@@ -3,7 +3,7 @@
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
+#define VENDOR_ID       0x03A8
 #define PRODUCT_ID      0x2171
 #define MANUFACTURER    Charles Garcia
 #define PRODUCT         8-Pack
