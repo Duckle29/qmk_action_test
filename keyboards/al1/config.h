@@ -21,8 +21,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6050
+#define VENDOR_ID       0x03A8 // test
+#define PRODUCT_ID      0x6050 /* test */
 #define DEVICE_VER      0x0104
 #define MANUFACTURER    Alsoran
 #define PRODUCT         AL1
