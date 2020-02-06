@@ -4,7 +4,7 @@
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0x03A8
-#define PRODUCT_ID      0x2171
+#define PRODUCT_ID      0x6E3C
 #define MANUFACTURER    Charles Garcia
 #define PRODUCT         8-Pack
 
