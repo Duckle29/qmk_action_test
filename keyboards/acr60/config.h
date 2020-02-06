@@ -5,7 +5,7 @@
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0x03A8
-#define PRODUCT_ID      0x64D4
+#define PRODUCT_ID      0x4D4D
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    MECHKEYS
 #define PRODUCT         ACR60
