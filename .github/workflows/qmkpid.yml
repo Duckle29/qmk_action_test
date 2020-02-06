@@ -28,7 +28,7 @@ jobs:
       id: get_config
       shell: bash
       run: |
-        configs=$((git diff-tree --no-commit-id -m --name-only -r $ghsha | grep config.h | grep -v keymaps || echo 'No keyboards added') | paste -sd ' ')
+        configs=$((git diff-tree --no-commit-id -m --name-only -r ${{ github.sha }} | grep config.h | grep -v keymaps || echo 'No keyboards added') | paste -sd ' ')
         echo "##[set-output name=configs;]$configs"
 
     - name: Generate QMKPID
