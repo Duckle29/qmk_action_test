@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: Check out
-      uses: actions/checkout@v2
+      uses: actions/checkout@v1
 
     - name: Install python dependencies
       run: |
@@ -28,8 +28,8 @@ jobs:
       id: get_config
       shell: bash
       run: |
-        echo "##[set-output name=configs;]$((git diff-tree --no-commit-id -m --name-only -r ${{ github.sha }} | grep config.h | grep -v keymaps || echo 'No keyboards added') | tr '\r\n' ' ')"
-
+        configs=$((git diff-tree --no-commit-id -m --name-only -r $ghsha | grep config.h | grep -v keymaps || echo 'No keyboards added') | paste -sd ' ')
+        echo "##[set-output name=configs;]$configs"
 
     - name: Generate QMKPID
       if: steps.get_config.outputs.configs != 'No keyboards added'
