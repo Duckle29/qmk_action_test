@@ -54,7 +54,7 @@ def process_config(cli, config_path, pids_json_path, pid_match):
         if pid_new != pid_match.group(2):
             cli.log.warning("%s already assigned %s, but PID doesn't match.", keyboard, pid_new)
             if cli.args.apply:
-                replace_pid(config_path, pid_new, pid_match)
+                replace_pid(str(config_path), pid_new, pid_match)
                 cli.log.warning('\tRe-applying %s to %s', pid_new, keyboard)
         else:
             cli.log.info('%s already assigned pid 0x%s', keyboard, pid_new)
@@ -63,7 +63,7 @@ def process_config(cli, config_path, pids_json_path, pid_match):
         cli.log.info('Assigned PID 0x%s to %s', pid_new, keyboard)
         if cli.args.apply:
             cli.log.info('\tApplying PID')
-            replace_pid(config_path, pid_new, pid_match)
+            replace_pid(str(config_path), pid_new, pid_match)
             data["pids"][pid_new] = chopped_config_path
 
     atomic_dump(data, pids_json_path)  # Save the new pids table
