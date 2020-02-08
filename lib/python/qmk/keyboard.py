@@ -92,6 +92,6 @@ def atomic_dump(data, json_file):
 
         json_file (str): The file to dump to
     """
-    with tempfile.NamedTemporaryFile('w', dir=str(Path(json_file).parents[0])) as tf:
+    with tempfile.NamedTemporaryFile('w', dir=str(Path(json_file).parents[0]), delete=False) as tf:
         json.dump(data, tf)
-        os.replace(tf.name, json_file)
+    os.replace(tf.name, json_file)
