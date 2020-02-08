@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0x03A8 // "UK"
-#define PRODUCT_ID      0x9AAF // A comment 
+#define PRODUCT_ID      0x9AAF // A comment A
 #define DEVICE_VER      0x0002
 #define MANUFACTURER    UK Keyboards
 #define PRODUCT         UK78
